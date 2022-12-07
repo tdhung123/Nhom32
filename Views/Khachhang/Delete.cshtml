@@ -1,0 +1,39 @@
+@model btl_nhom32.Models.Khachhang
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Bạn có chắc muốn xoá ?</h1>
+
+
+<div>
+
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Tenkh)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Tenkh)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Diachikh)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Diachikh)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Sdtkh)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Sdtkh)
+        </dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Makh" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">Quay về bảng khách hàng</a>
+    </form>
+</div>

@@ -1,0 +1,55 @@
+@model IEnumerable<btl_nhom32.Models.Khachhang>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Bảng khách hàng</h1>
+
+<p>
+    <a class="themmoi" asp-action="Create">Thêm khách hàng</a>
+</p>
+<table class="table">
+    <thead>
+        <tr class="ccc">
+
+            <th>
+                @Html.DisplayNameFor(model => model.Makh)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tenkh)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Diachikh)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sdtkh)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr class="ccc">
+                <td>
+                    @Html.DisplayFor(modelItem => item.Makh)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Tenkh)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Diachikh)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Sdtkh)
+                </td>
+                <td class="view-bang">
+                    <a class="c1c" asp-action="Edit" asp-route-id="@item.Makh">Sửa</a> |
+                    <a class="c2c" asp-action="Details" asp-route-id="@item.Makh">Chi tiết</a> |
+                    <a class="c3c" asp-action="Delete" asp-route-id="@item.Makh">Xoá</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

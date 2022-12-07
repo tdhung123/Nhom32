@@ -1,0 +1,155 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@* <div class="text-center"> *@
+@* <h1 class="display-4">Chào mừng bạn đến với hệ thống quản lý</h1> *@
+@* <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <marquee behavior="" direction="right">
+    Thầy ơi cho em qua môn 😢😢😢😢
+    </marquee>
+    <marquee style="color: #dc3545;;" behavior="" direction="bottom">
+    Học lại cho chắc em nhá 😚😚😚😚
+    </marquee>
+    <marquee behavior="" direction="right">
+    Thôi thầy cho bạn em điểm cao cao để nhân đôi niềm vui ngày cưới ạ 😢😢😢😢
+    </marquee>
+    <marquee style="color: #dc3545;;" behavior="" direction="
+    bottom">
+    Em trượt thầy vẫn vui mà có sao đâu 😚😚😚😚
+    </marquee> *@
+
+@* </div> *@
+
+<body>
+
+    <h1>
+        <marquee>🎄🎄🎄Chào mừng bạn đến với hệ thống quản lý máy tính🎄🎄🎄</marquee>
+
+
+    </h1>
+    <section>
+        <div class="box">
+            <div class="circle">
+                <h2>Merry<br>Christmas</h2>
+            </div>
+        </div>
+    </section>
+    <script>
+        function bubbles() {
+            var count = 200;
+            var section = document.querySelector('section');
+            var i = 0;
+            while (i < count) {
+                var bubble = document.createElement('i');
+                var x = Math.floor(Math.random() * window.innerWidth)
+                var y = Math.floor(Math.random() * window.innerHeight)
+                var size = Math.random() * 10;
+                bubble.style.left = x + 'px';
+                bubble.style.top = y + 'px';
+                bubble.style.width = 1 + size + 'px';
+                bubble.style.height = 1 + size + 'px';
+                bubble.style.animationDuration = 5 + size + 's';
+                bubble.style.animationDelay = -size + 's';
+                section.appendChild(bubble);
+                i++
+            }
+        }
+        bubbles()
+
+
+
+    </script>
+</body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Satisfy', cursive;
+    }
+
+    body {
+        overflow: hidden;
+    }
+
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 64vh;
+        background: #f1f1f1;
+
+    }
+
+    section .box {
+        position: absolute;
+        width: 450px;
+        height: 450px;
+    }
+
+    section .box::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(to right, #000, transparent);
+        opacity: 0.1;
+        transform: rotate(45deg);
+        transform-origin: left;
+
+    }
+
+    section .box .circle {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, #fff, #e4e3e8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        z-index: 1;
+    }
+
+    section .box .circle::before {
+        content: '';
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        background: linear-gradient(315deg, #fff, #e4e3e8);
+        border-radius: 50%;
+        opacity: 1;
+    }
+
+    section .box:hover .circle::before {
+        opacity: 0;
+    }
+
+    section .box .circle h2 {
+        position: absolute;
+        z-index: 2;
+        font-size: 4em;
+
+        color: #ff2a2a;
+        text-align: center;
+    }
+
+    section i {
+        position: absolute;
+        background: #ff2a2a;
+        border-radius: 100%;
+        animation: animate 5s linear infinite;
+    }
+
+    section i:nth-child(even) {
+        background: transparent;
+        border: 1px solid #ff2a2a;
+    }
+
+    @*@keyframesanimate{0%{transform:translateY(0);opacity:0;}10%{/*transform:translateY(0);*/opacity:.6;}90%{/*transform:translateY(0);*/opacity:.8;}100%{transform:translateY(-2000%);opacity:1;}}*@
+</style>

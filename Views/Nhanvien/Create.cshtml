@@ -1,0 +1,101 @@
+@model btl_nhom32.Models.Nhanvien
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Thêm nhân viên mới</h1>
+
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            @* <div class="form-group">
+                <label asp-for="Manv" class="control-label"></label>
+                <input asp-for="Manv" class="form-control" />
+                <span asp-validation-for="Manv" class="text-danger"></span>
+                </div> *@
+            <div class="form-group">
+                <label asp-for="Manv" class="control-label"></label>
+                <input asp-for="Manv" class="form-control" value="@ViewBag.newID" />
+                <span asp-validation-for="Manv" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tennv" class="control-label"></label>
+                <input asp-for="Tennv" class="form-control" />
+                <span asp-validation-for="Tennv" class="text-danger"></span>
+            </div>
+            @* <div class="form-group">
+                <label asp-for="Gioitinhnv" class="control-label"></label>
+                <input asp-for="Gioitinhnv" class="form-control" />
+                <span asp-validation-for="Gioitinhnv" class="text-danger"></span>
+                </div> *@
+
+            <div class="form-group">
+                <label>Giới tính</label>
+                <div class="form-div" style="padding: 5px;">
+                    @Html.RadioButtonFor(model => model.Gioitinhnv, "Nữ")
+                    Nữ
+
+                </div>
+                <div class="form-div" style="padding: 5px;">
+                    @Html.RadioButtonFor(model => model.Gioitinhnv, "Nam")
+                    Nam
+                </div>
+                <div class="form-div" style="padding: 5px;">
+                    @Html.RadioButtonFor(model => model.Gioitinhnv, "Giới tính khác")
+                    Giới tính khác
+                </div>
+            </div>
+
+
+
+            <div class="form-group">
+                <label asp-for="ngaynv" class="control-label"></label>
+                <input asp-for="ngaynv" class="form-control" />
+                <span asp-validation-for="ngaynv" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Sdtnv" class="control-label"></label>
+                <input asp-for="Sdtnv" class="form-control" />
+                <span asp-validation-for="Sdtnv" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Diachinv" class="control-label"></label>
+                <input asp-for="Diachinv" class="form-control" />
+                <span asp-validation-for="Diachinv" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Emailnv" class="control-label"></label>
+                <input asp-for="Emailnv" class="form-control" />
+                <span asp-validation-for="Emailnv" class="text-danger"></span>
+            </div>
+            @* <div class="form-group">
+                <label asp-for="Tencv" class="control-label"></label>
+                <select asp-for="Tencv" class="form-control" asp-items="ViewBag.Tencv"></select>
+                </div> *@
+            <div class="form-group">
+                <label asp-for="Tencv" class="control-label"></label>
+                <select asp-for="Tencv" class="form-control" asp-items="ViewBag.Tencv"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="ngaylamnv" class="control-label"></label>
+                <input asp-for="ngaylamnv" class="form-control" />
+                <span asp-validation-for="ngaylamnv" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Thêm mới" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a class="themmoi" asp-action="Index">Về lại bảng nhân viên</a>
+</div>
+
+@section Scripts {
+@{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

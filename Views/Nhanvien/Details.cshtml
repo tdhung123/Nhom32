@@ -1,0 +1,66 @@
+@model btl_nhom32.Models.Nhanvien
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Chi tiết nhân viên</h1>
+
+<div>
+
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Tennv)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Tennv)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Gioitinhnv)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Gioitinhnv)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ngaynv)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ngaynv)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Sdtnv)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Sdtnv)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Diachinv)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Diachinv)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Emailnv)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Emailnv)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Chucvucv)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Chucvucv.Tencv)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ngaylamnv)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ngaylamnv)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Manv">Sửa</a> |
+    <a asp-action="Index">Quay về bảng nhân viên</a>
+</div>

@@ -1,0 +1,45 @@
+@model btl_nhom32.Models.Kiemkho
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Bạn có chắc muốn xoá</h1>
+
+
+<div>
+    <h4>Kiemkho</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Ngaykk)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Ngaykk)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Hanghoa)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Hanghoa.Mahh)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Kho)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Kho.Makho)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Sluongkk)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Sluongkk)
+        </dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Idkk" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">Về lại bảng kiểm kho</a>
+    </form>
+</div>

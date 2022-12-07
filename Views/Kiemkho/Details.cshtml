@@ -1,0 +1,42 @@
+@model btl_nhom32.Models.Kiemkho
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Chi tiết kiểm kho</h1>
+
+<div>
+
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Ngaykk)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Ngaykk)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Hanghoa)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Hanghoa.Mahh)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Kho)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Kho.Makho)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Sluongkk)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Sluongkk)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Idkk">Sửa</a> |
+    <a asp-action="Index">Về lại trang kiểm kho</a>
+</div>

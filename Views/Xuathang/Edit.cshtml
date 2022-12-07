@@ -1,0 +1,65 @@
+@model btl_nhom32.Models.Xuathang
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Bạn có chắc muốn sửa hoá đơn xuất hàng này</h1>
+
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Idxh" />
+            <div class="form-group">
+                <label asp-for="Manv" class="control-label"></label>
+                <select asp-for="Manv" class="form-control" asp-items="ViewBag.Manv"></select>
+                <span asp-validation-for="Manv" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Makh" class="control-label"></label>
+                <select asp-for="Makh" class="form-control" asp-items="ViewBag.Makh"></select>
+                <span asp-validation-for="Makh" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ngayxh" class="control-label"></label>
+                <input asp-for="ngayxh" class="form-control" />
+                <span asp-validation-for="ngayxh" class="text-danger"></span>
+            </div>
+            @* <div class="form-group">
+                <label asp-for="trangtxh" class="control-label"></label>
+                <input asp-for="trangtxh" class="form-control" />
+                <span asp-validation-for="trangtxh" class="text-danger"></span>
+                </div> *@
+            <div class="form-group">
+                <label>Tình trạng đơn hàng</label>
+                <div class="form-div" style="padding: 5px;">
+                    @Html.RadioButtonFor(model => model.trangtxh, "Đang xuất kho")
+                    Đang xuất kho
+
+                </div>
+                <div class="form-div" style="padding: 5px;">
+                    @Html.RadioButtonFor(model => model.trangtxh, "Đang gửi đi")
+                    Đang gửi đi
+                </div>
+                <div class="form-div" style="padding: 5px;">
+                    @Html.RadioButtonFor(model => model.trangtxh, "Đã nhận hàng")
+                    Đã nhận hàng
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Quay về bảng xuất hàng</a>
+</div>
+
+@section Scripts {
+@{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

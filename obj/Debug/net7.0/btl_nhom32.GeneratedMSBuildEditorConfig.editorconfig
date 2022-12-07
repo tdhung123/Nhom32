@@ -1,0 +1,277 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = btl_nhom32
+build_property.RootNamespace = btl_nhom32
+build_property.ProjectDir = C:\Users\Admin\Desktop\baihoanchinh\btl_nhom32\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Admin\Desktop\baihoanchinh\btl_nhom32
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Chucvucv/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2h1Y3Z1Y3ZcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Chucvucv/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2h1Y3Z1Y3ZcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Chucvucv/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2h1Y3Z1Y3ZcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Chucvucv/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2h1Y3Z1Y3ZcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Chucvucv/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2h1Y3Z1Y3ZcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Hanghoa/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFuZ2hvYVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Hanghoa/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFuZ2hvYVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Hanghoa/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFuZ2hvYVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Hanghoa/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFuZ2hvYVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Hanghoa/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFuZ2hvYVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Khachhang/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hoYW5nXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Khachhang/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hoYW5nXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Khachhang/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hoYW5nXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Khachhang/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hoYW5nXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Khachhang/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hhY2hoYW5nXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Kho/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hvXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Kho/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hvXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Kho/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hvXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Kho/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hvXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Kho/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2hvXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Kiemkho/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2llbWtob1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Kiemkho/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2llbWtob1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Kiemkho/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2llbWtob1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Kiemkho/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2llbWtob1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Kiemkho/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2llbWtob1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Login/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Login/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Login/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Login/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Login/login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cbG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Nhacungcap/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhY3VuZ2NhcFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Nhacungcap/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhY3VuZ2NhcFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Nhacungcap/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhY3VuZ2NhcFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Nhacungcap/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhY3VuZ2NhcFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Nhacungcap/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhY3VuZ2NhcFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Nhacungcap/Upload.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhY3VuZ2NhcFxVcGxvYWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Nhanvien/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhbnZpZW5cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Nhanvien/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhbnZpZW5cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Nhanvien/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhbnZpZW5cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Nhanvien/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhbnZpZW5cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Nhanvien/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhbnZpZW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Nhaphang/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhcGhhbmdcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Nhaphang/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhcGhhbmdcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Nhaphang/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhcGhhbmdcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Nhaphang/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhcGhhbmdcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Nhaphang/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhcGhhbmdcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Nhaphang/Upload.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmhhcGhhbmdcVXBsb2FkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Thuonghieu/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGh1b25naGlldVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Thuonghieu/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGh1b25naGlldVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Thuonghieu/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGh1b25naGlldVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Thuonghieu/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGh1b25naGlldVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Thuonghieu/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGh1b25naGlldVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Xuathang/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWHVhdGhhbmdcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Xuathang/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWHVhdGhhbmdcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Xuathang/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWHVhdGhhbmdcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Xuathang/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWHVhdGhhbmdcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Xuathang/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWHVhdGhhbmdcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Desktop/baihoanchinh/btl_nhom32/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-vnqb5oxgm2

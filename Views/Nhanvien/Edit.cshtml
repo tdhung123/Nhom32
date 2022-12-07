@@ -1,0 +1,68 @@
+@model btl_nhom32.Models.Nhanvien
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Bạn có chắc muốn sửa thông tin nhân viên này</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Manv" />
+            <div class="form-group">
+                <label asp-for="Tennv" class="control-label"></label>
+                <input asp-for="Tennv" class="form-control" />
+                <span asp-validation-for="Tennv" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Gioitinhnv" class="control-label"></label>
+                <input asp-for="Gioitinhnv" class="form-control" />
+                <span asp-validation-for="Gioitinhnv" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ngaynv" class="control-label"></label>
+                <input asp-for="ngaynv" class="form-control" />
+                <span asp-validation-for="ngaynv" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Sdtnv" class="control-label"></label>
+                <input asp-for="Sdtnv" class="form-control" />
+                <span asp-validation-for="Sdtnv" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Diachinv" class="control-label"></label>
+                <input asp-for="Diachinv" class="form-control" />
+                <span asp-validation-for="Diachinv" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Emailnv" class="control-label"></label>
+                <input asp-for="Emailnv" class="form-control" />
+                <span asp-validation-for="Emailnv" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tencv" class="control-label"></label>
+                <select asp-for="Tencv" class="form-control" asp-items="ViewBag.Tencv"></select>
+                <span asp-validation-for="Tencv" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ngaylamnv" class="control-label"></label>
+                <input asp-for="ngaylamnv" class="form-control" />
+                <span asp-validation-for="ngaylamnv" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Về bảng nhân viên</a>
+</div>
+
+@section Scripts {
+@{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

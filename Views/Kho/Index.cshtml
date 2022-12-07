@@ -1,0 +1,36 @@
+@model IEnumerable<btl_nhom32.Models.Kho>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Bảng danh sách kho</h1>
+
+<p>
+    <a class="themmoi" asp-action="Create">Thêm kho mới</a>
+</p>
+<table class="table">
+    <thead>
+        <tr class="ccc">
+            <th>
+                @Html.DisplayNameFor(model => model.Dckho)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr class="ccc">
+                <td>
+                    @Html.DisplayFor(modelItem => item.Dckho)
+                </td>
+                <td class="view-bang">
+                    <a class="c1c" asp-action="Edit" asp-route-id="@item.Makho">Sửa</a> |
+                    <a class="c2c" asp-action="Details" asp-route-id="@item.Makho">Chi tiết</a> |
+                    <a class="c3c" asp-action="Delete" asp-route-id="@item.Makho">Xoá</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

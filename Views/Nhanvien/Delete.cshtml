@@ -1,0 +1,69 @@
+@model btl_nhom32.Models.Nhanvien
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Bạn có chắc muốn xoá nhân viên này khỏi bảng ?</h1>
+
+
+<div>
+
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Tennv)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Tennv)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Gioitinhnv)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Gioitinhnv)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ngaynv)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ngaynv)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Sdtnv)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Sdtnv)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Diachinv)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Diachinv)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Emailnv)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Emailnv)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Chucvucv)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Chucvucv.Idcv)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ngaylamnv)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ngaylamnv)
+        </dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Manv" />
+        <input type="submit" value="Xoá" class="btn btn-danger" /> |
+        <a asp-action="Index">Về bảng nhân viên</a>
+    </form>
+</div>

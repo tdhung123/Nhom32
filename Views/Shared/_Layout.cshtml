@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    @* <title>@ViewData["Title"] - btl_nhom32</title> *@
+    <title>Quản lý bán máy tính</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/btl_nhom32.styles.css" asp-append-version="true" />
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand headerlogo" asp-area="" asp-controller="Home" asp-action="Index">btl_nhom31</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Tổng
+                                quan</a>
+                        </li>
+                        @* <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home"
+                            asp-action="Privacy">Privacy</a>
+                            </li> *@
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Nhacungcap" asp-action="Index">Nhà
+                                cung cấp</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Nhanvien" asp-action="Index">Nhân
+                                viên</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Hanghoa" asp-action="Index">Hàng
+                                hoá</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Nhaphang" asp-action="Index">Nhập
+                                hàng</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Kiemkho" asp-action="Index">Kiểm
+                                kho</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Khachhang"
+                                asp-action="Index">Khách
+                                hàng</a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Xuathang" asp-action="Index">Xuất
+                                hàng</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <marquee behavior="" direction="right">👻👻👻</marquee>
+
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+
+            &copy; 2022 - Hệ thống quản lý máy tính
+            @* &copy; 2022 - btl_nhom32 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a> *@
+            <a class="itemchantrang" href="https://www.facebook.com/profile.php?id=100013125874548"> <i
+                    class="ti-facebook fa-brands fa-square-facebook"></i></a>
+            <marquee behavior="" direction="right">⛄⛄⛄</marquee>
+
+        </div>
+
+
+    </footer>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>
+<style>
+    .itemchantrang {
+        font-size: 40px;
+    }
+
+    .headerlogo:hover {
+        opacity: .8;
+    }
+</style>

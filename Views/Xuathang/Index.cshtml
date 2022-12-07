@@ -1,0 +1,66 @@
+@model IEnumerable<btl_nhom32.Models.Xuathang>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Bảng xuất hàng</h1>
+
+<p>
+    <a class="themmoi" asp-action="Create">Thêm phiếu xuất hàng mới</a>
+</p>
+<table class="table">
+    <thead>
+        <tr class="ccc">
+            <th>
+                @Html.DisplayNameFor(model => model.Nhanvien)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Khachhang)
+            </th>
+            <th>
+                Địa chỉ
+            </th>
+            <th>
+                SĐT
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ngayxh)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.trangtxh)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr class="ccc">
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nhanvien.Manv)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Khachhang.Makh)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Khachhang.Diachikh)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Khachhang.Sdtkh)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ngayxh)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.trangtxh)
+                </td>
+                <td class="view-bang">
+                    <a class="c1c" asp-action="Edit" asp-route-id="@item.Idxh">Sửa</a> |
+                    <a class="c2c" asp-action="Details" asp-route-id="@item.Idxh">Xem</a> |
+                    <a class="c3c" asp-action="Delete" asp-route-id="@item.Idxh">Xoá</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,136 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+.form-group .control-label {
+  font-size: 16px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #222;
+  display: block;
+  cursor: pointer;
+}
+
+.form-group .form-control {
+  margin-bottom: 15px;
+  padding-bottom: 9px;
+}
+
+.btn.btn-primary {
+  font-size: 16px;
+  background-color: #fff;
+  font-weight: 600;
+  color: green;
+  border-radius: 30px;
+  min-width: 148px;
+  text-align: center;
+  border: 2px solid green;
+  line-height: 1.6;
+  cursor: pointer;
+  transition: all .25s ease-in;
+  position: relative;
+  width: 25%;
+  left: calc(100% - 148px);
+}
+
+.btn.btn-primary:hover {
+  background-color: green;
+  color: #fff;
+  border: 2px solid #222;
+}
+.view-bang{
+  width:150px
+}
+.container {
+  max-width: calc(100% - 32px);
+}
+.navbar-light .navbar-nav .nav-link {
+  border-right: 1px solid #ccc;
+ 
+}
+.navbar-light .navbar-nav .nav-link:hover{
+  background-color: #3b85d4df;
+  color: #fff !important;
+}
+.themmoi {
+  text-decoration: none;
+  margin-top: 16px;
+  font-size: 16px;
+  background-color: #fff;
+  font-weight: 600;
+  color: #0dcaf0;
+  border-radius: 30px;
+  min-width: 148px;
+  text-align: center;
+  border: 2px solid #0d90f0;
+  line-height: 1.6;
+  cursor: pointer;
+  transition: all .25s ease-in;
+  padding: 4px;
+}
+
+.themmoi:hover {
+  background-color: #0dcaf0;
+  color: #fff;
+  border: 2px solid #222;
+}
+tbody, td, tfoot, th, thead, tr {
+  border-color: inherit;
+  border-style: solid;
+  border-width: 1px;
+}
+.ccc:hover {
+  background-color: #ccc;
+}
+.view-bang a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 4px;
+}
+
+.view-bang .c1c:hover {
+  color: #fff;
+  background-color: #00cbf6;
+
+}
+
+.view-bang .c2c:hover {
+  color: #fff;
+  background-color: #0030f6;
+
+}
+
+.view-bang .c3c:hover {
+  background-color: red;
+  color: #fff;
+
+}
+button, input, optgroup, select, textarea {
+  border-radius: 23px;
+  /* margin: 0; */
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 30px;
+}
+.Filter:hover{
+  background-color: #FF00CC;
+  color: #fff;
+}

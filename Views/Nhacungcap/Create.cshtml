@@ -1,0 +1,121 @@
+@model btl_nhom32.Models.Nhacungcap
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Thêm nhà cung cấp mới</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            @* <div class="form-group">
+                <label asp-for="Mancc" class="control-label"></label>
+                <input asp-for="Mancc" class="form-control" />
+                <span asp-validation-for="Mancc" class="text-danger"></span>
+                </div> *@
+            <div class="form-group">
+                <label asp-for="Mancc" class="control-label"></label>
+                <input asp-for="Mancc" class="form-control" value="@ViewBag.newID" />
+                <span asp-validation-for="Mancc" class="text-danger"></span>
+            </div>
+            @* <div class="form-group">
+                <label asp-for="Tenncc" class="control-label"></label>
+                <input asp-for="Tenncc" class="form-control" />
+                <span asp-validation-for="Tenncc" class="text-danger"></span>
+                </div> *@
+            <div class="form-group">
+                <label for="tenncc" asp-for="Tenncc" class="control-label"></label>
+                <textarea id="tenncc" rows="2" asp-for="Tenncc" class="form-control"
+                    placeholder="Nhập tên nhà cung cấp ở đây"></textarea>
+                <span asp-validation-for="Tenncc" class="text-danger"></span>
+            </div>
+            @* <div class="form-group">
+                <label asp-for="Diachincc" class="control-label"></label>
+                <input asp-for="Diachincc" class="form-control" />
+                <span asp-validation-for="Diachincc" class="text-danger"></span>
+                </div> *@
+
+            <div class="form-group">
+                <label for="diachincc" asp-for="Diachincc" class="control-label"></label>
+                <textarea id="diachincc" rows="2" asp-for="Diachincc" class="form-control"
+                    placeholder="Nhập địa chỉ nhà cung cấp ở đây"></textarea>
+                <span asp-validation-for="Diachincc" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="sdtncc" asp-for="Sdtncc" class="control-label"></label>
+                <input id="sdtncc" asp-for="Sdtncc" class="form-control"
+                    placeholder="Nhập số điện thoại nhà cung cấp ở đây" />
+                <span asp-validation-for="Sdtncc" class="text-danger"></span>
+            </div>
+            @* <div class="form-group">
+                <label for="emailncc" asp-for="Emailncc" class="control-label"></label>
+                <input id="emailncc" asp-for="Emailncc" class="form-control"
+                placeholder="Nhập Email nhà cung cấp ở đây" />
+                <span asp-validation-for="Emailncc" class="text-danger"></span>
+                </div> *@
+            <div class="form-group">
+                <label for="emailncc" asp-for="Emailncc" class="control-label"></label>
+                <input id="emailncc" asp-for="Emailncc" class="form-control"
+                    placeholder="Nhập Email nhà cung cấp ở đây" />
+                <span asp-validation-for="Emailncc" class="text-danger"></span>
+            </div>
+            @* <div class="form-group">
+                <label asp-for="ngayncc" class="control-label"></label>
+                <input asp-for="ngayncc" class="form-control" />
+                <span asp-validation-for="ngayncc" class="text-danger"></span>
+                </div> *@
+            <div class="form-group">
+                <input type="submit" value="Thêm" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a class="themmoi" asp-action="Index">Về lại bảng nhà cung cấp</a>
+</div>
+
+@section Scripts {
+@{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+@* <style>
+    .form-group .control-label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #222;
+    display: block;
+    cursor: pointer;
+    }
+
+    .form-group .form-control {
+    margin-bottom: 15px;
+    padding-bottom: 9px;
+    }
+
+    .btn.btn-primary {
+    margin-top: 16px;
+    font-size: 16px;
+    background-color: #fff;
+    font-weight: 600;
+    color: green;
+    border-radius: 30px;
+    min-width: 148px;
+    text-align: center;
+    border: 2px solid green;
+    line-height: 1.6;
+    cursor: pointer;
+    transition: all .25s ease-in;
+    }
+
+    .btn.btn-primary:hover {
+    background-color: green;
+    color: #fff;
+    border: 2px solid #222;
+    }
+    </style> *@

@@ -1,0 +1,90 @@
+@model IEnumerable<btl_nhom32.Models.Nhanvien>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Bảng nhân viên</h1>
+
+<p>
+    <a class="themmoi" asp-action="Create">Thêm nhân viên mới</a>
+</p>
+<form asp-controller="Nhanvien" asp-action="Index">
+    <p>
+        Title: <input type="text" name="SearchString" />
+        <input type="submit" value="Filter" />
+    </p>
+</form>
+<table class="table">
+    <thead>
+        <tr class="ccc">
+            <th>
+                @Html.DisplayNameFor(model => model.Manv)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tennv)
+            </th>
+            @* <th>
+                @Html.DisplayNameFor(model => model.Gioitinhnv)
+                </th>
+                <th>
+                @Html.DisplayNameFor(model => model.ngaynv)
+                </th>
+                <th>
+                @Html.DisplayNameFor(model => model.Sdtnv)
+                </th>
+                <th>
+                @Html.DisplayNameFor(model => model.Diachinv)
+                </th>
+                <th>
+                @Html.DisplayNameFor(model => model.Emailnv)
+                </th> *@
+            <th>
+                @Html.DisplayNameFor(model => model.Chucvucv)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ngaylamnv)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr class="ccc">
+                <td>
+                    @Html.DisplayFor(modelItem => item.Manv)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Tennv)
+                </td>
+                @* <td>
+                    @Html.DisplayFor(modelItem => item.Gioitinhnv)
+                    </td>
+                    <td>
+                    @Html.DisplayFor(modelItem => item.ngaynv)
+                    </td>
+                    <td>
+                    @Html.DisplayFor(modelItem => item.Sdtnv)
+                    </td>
+                    <td>
+                    @Html.DisplayFor(modelItem => item.Diachinv)
+                    </td>
+                    <td>
+                    @Html.DisplayFor(modelItem => item.Emailnv)
+                    </td> *@
+                <td>
+                    @Html.DisplayFor(modelItem => item.Chucvucv.Tencv)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ngaylamnv)
+                </td>
+                <td class="view-bang">
+                    <a class="c1c" asp-action="Edit" asp-route-id="@item.Manv">Sửa</a> |
+                    <a class="c2c" asp-action="Details" asp-route-id="@item.Manv">Xem</a> |
+                    <a class="c3c" asp-action="Delete" asp-route-id="@item.Manv">Xoá</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

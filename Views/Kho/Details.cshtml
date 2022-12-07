@@ -1,0 +1,24 @@
+@model btl_nhom32.Models.Kho
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Bảng chi tiết danh sách kho</h1>
+
+<div>
+
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Dckho)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Dckho)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Makho">Sửa</a> |
+    <a asp-action="Index">Về bảng kho</a>
+</div>

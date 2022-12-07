@@ -1,0 +1,30 @@
+@model btl_nhom32.Models.Chucvucv
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Chi tiết</h1>
+
+<div>
+    <h4>chức vụ</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Tencv)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Tencv)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Motacn)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Motacn)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Idcv">Sửa</a> |
+    <a asp-action="Index">Về bảng chức vụ</a>
+</div>

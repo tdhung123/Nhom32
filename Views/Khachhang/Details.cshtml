@@ -1,0 +1,36 @@
+@model btl_nhom32.Models.Khachhang
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Chi tiết khách hàng</h1>
+
+<div>
+
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Tenkh)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Tenkh)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Diachikh)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Diachikh)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Sdtkh)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Sdtkh)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Makh">Sửa</a> |
+    <a asp-action="Index">Quay lại bảng khách hàng</a>
+</div>

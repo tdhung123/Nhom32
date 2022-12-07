@@ -1,0 +1,152 @@
+@* @model IEnumerable<btl_nhom32.Models.Nhacungcap>
+
+    @{
+    ViewData["Title"] = "Index";
+    }
+
+    <h1>Bảng nhà cung cấp</h1>
+
+    <p>
+    <a class="themmoi" asp-action="Create">Thêm nhà cung cấp mới</a>
+    </p>
+    <table class="table">
+    <thead>
+    <tr>
+
+    <th>
+    @Html.DisplayNameFor(model => model.Mancc)
+    </th>
+    <th>
+    @Html.DisplayNameFor(model => model.Tenncc)
+    </th>
+    <th>
+    @Html.DisplayNameFor(model => model.Diachincc)
+    </th>
+    <th>
+    @Html.DisplayNameFor(model => model.Sdtncc)
+    </th>
+    <th>
+    @Html.DisplayNameFor(model => model.Emailncc)
+    </th>
+    <th>
+    @Html.DisplayNameFor(model => model.ngayncc)
+    </th>
+    <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+    <tr>
+    <td>
+    @Html.DisplayFor(modelItem => item.Mancc)
+    </td>
+    <td>
+    @Html.DisplayFor(modelItem => item.Tenncc)
+    </td>
+    <td>
+    @Html.DisplayFor(modelItem => item.Diachincc)
+    </td>
+    <td>
+    @Html.DisplayFor(modelItem => item.Sdtncc)
+    </td>
+    <td>
+    @Html.DisplayFor(modelItem => item.Emailncc)
+    </td>
+    <td>
+    @Html.DisplayFor(modelItem => item.ngayncc)
+    </td>
+    <td class="view-bang">
+    <a asp-action="Edit" asp-route-id="@item.Mancc">Sửa</a> |
+    <a asp-action="Details" asp-route-id="@item.Mancc">Chi tiết</a> |
+    <a asp-action="Delete" asp-route-id="@item.Mancc">Xoá</a>
+    </td>
+    </tr>
+    }
+    </tbody>
+    </table> *@
+@model btl_nhom32.Models.MovieGenreViewModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Bảng nhà cung cấp</h1>
+
+<p>
+    <a class="themmoi" asp-action="Create">Thêm nhà cung cấp mới</a>
+</p>
+<form asp-controller="Nhacungcap" asp-action="Index" method="get">
+    <p>
+        @* <h3>Tìm kiếm theo tên nhà cung cấp</h3> *@
+
+        <select asp-for="MovieGenre" asp-items="Model.Tenncc">
+
+            <option value="">Tất cả</option>
+        </select>
+
+        Lọc theo tên ncc: <input type="text" asp-for="SearchString" />
+
+        <input class="Filter" type="submit" value="Tìm" />
+    </p>
+</form>
+<table class="table">
+
+    <thead>
+        <tr class="ccc">
+
+            <th>
+                @Html.DisplayNameFor(model => model.Nhacungcap![0].Mancc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nhacungcap![0].Tenncc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nhacungcap![0].Diachincc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nhacungcap![0].Sdtncc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nhacungcap![0].Emailncc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nhacungcap![0].ngayncc)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Nhacungcap!)
+        {
+            <tr class="ccc">
+                <td>
+                    @Html.DisplayFor(modelItem => item.Mancc)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Tenncc)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Diachincc)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Sdtncc)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Emailncc)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ngayncc)
+                </td>
+                <td class="view-bang">
+                    <a class="c1c" asp-action="Edit" asp-route-id="@item.Mancc">Sửa</a> |
+                    <a class="c2c" asp-action="Details" asp-route-id="@item.Mancc">Chi tiết</a> |
+                    <a class="c3c" asp-action="Delete" asp-route-id="@item.Mancc">Xoá</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<style>
+
+</style>
+<script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>

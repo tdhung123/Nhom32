@@ -1,0 +1,50 @@
+@model btl_nhom32.Models.Hanghoa
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Bạn có chắc muốn xoá hàng</h1>
+
+<div>
+
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Tenhh)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Tenhh)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Thuonghieu)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Thuonghieu.Idth)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Dvtinh)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Dvtinh)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.gvhh)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.gvhh)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.gbhh)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.gbhh)
+        </dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Mahh" />
+        <input type="submit" value="Xoá" class="btn btn-danger" /> |
+        <a asp-action="Index">Quay về bảng hàng hoá</a>
+    </form>
+</div>

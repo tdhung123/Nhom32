@@ -1,0 +1,48 @@
+@model IEnumerable<btl_nhom32.Models.Chucvucv>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Bảng chức vụ</h1>
+
+<p>
+    <a class="themmoi" asp-action="Create">Thêm</a>
+</p>
+<table class="table">
+    <thead>
+        <tr class="ccc">
+            <th>
+                @Html.DisplayNameFor(model => model.Idcv)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tencv)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Motacn)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr class="ccc">
+                <td>
+                    @Html.DisplayFor(modelItem => item.Idcv)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Tencv)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Motacn)
+                </td>
+                <td class="view-bang">
+                    <a class="c1c" asp-action="Edit" asp-route-id="@item.Idcv">Sửa</a> |
+                    <a class="c2c" asp-action="Details" asp-route-id="@item.Idcv">Chi tiết</a> |
+                    <a class="c3c" asp-action="Delete" asp-route-id="@item.Idcv">Xoá</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

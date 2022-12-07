@@ -1,0 +1,60 @@
+@model IEnumerable<btl_nhom32.Models.Kiemkho>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Bảng danh kiểm kho</h1>
+
+<p>
+    <a class="themmoi" asp-action="Create">Thêm mới</a>
+</p>
+<table class="table">
+    <thead>
+        <tr class="ccc">
+            <th>
+                @Html.DisplayNameFor(model => model.Idkk)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ngaykk)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Hanghoa)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Kho)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sluongkk)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr class="ccc">
+                <td>
+                    @Html.DisplayFor(modelItem => item.Idkk)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ngaykk)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Hanghoa.Mahh)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Kho.Makho)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Sluongkk)
+                </td>
+                <td class="view-bang">
+                    <a class="c1c" asp-action="Edit" asp-route-id="@item.Idkk">Sửa</a> |
+                    <a class="c2c" asp-action="Details" asp-route-id="@item.Idkk">Chi tiết</a> |
+                    <a class="c3c" asp-action="Delete" asp-route-id="@item.Idkk">Xoá</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

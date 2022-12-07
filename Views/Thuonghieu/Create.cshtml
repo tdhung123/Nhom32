@@ -1,0 +1,42 @@
+@model btl_nhom32.Models.Thuonghieu
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Thêm thương hiện mới</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            @* <div class="form-group">
+                <label asp-for="Idth" class="control-label"></label>
+                <input asp-for="Idth" class="form-control" />
+                <span asp-validation-for="Idth" class="text-danger"></span>
+                </div> *@
+            <div class="form-group">
+                <label asp-for="Idth" class="control-label"></label>
+                <input asp-for="Idth" class="form-control" value="@ViewBag.newID" />
+                <span asp-validation-for="Idth" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tenth" class="control-label"></label>
+                <input asp-for="Tenth" class="form-control" />
+                <span asp-validation-for="Tenth" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a class="themmoi" asp-action="Index">Về bảng thương hiệu</a>
+</div>
+
+@section Scripts {
+@{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

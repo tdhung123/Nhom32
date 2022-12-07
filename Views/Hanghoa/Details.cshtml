@@ -1,0 +1,48 @@
+@model btl_nhom32.Models.Hanghoa
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Chi tiết hàng hoá</h1>
+
+<div>
+
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Tenhh)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Tenhh)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Thuonghieu)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Thuonghieu.Tenth)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Dvtinh)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Dvtinh)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.gvhh)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.gvhh)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.gbhh)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.gbhh)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Mahh">Sửa</a> |
+    <a asp-action="Index">Về bảng hàng hoá</a>
+</div>

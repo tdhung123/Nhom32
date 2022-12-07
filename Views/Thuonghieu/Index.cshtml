@@ -1,0 +1,42 @@
+@model IEnumerable<btl_nhom32.Models.Thuonghieu>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Bảng thương hiệu sản phẩm</h1>
+
+<p>
+    <a class="themmoi" asp-action="Create">Thêm thương hiệu mới</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.Idth)
+
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tenth)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Idth)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Tenth)
+                </td>
+                <td class="view-bang">
+                    <a class="c1c" asp-action="Edit" asp-route-id="@item.Idth">Edit</a> |
+                    <a class="c2c" asp-action="Details" asp-route-id="@item.Idth">Details</a> |
+                    <a class="c3c" asp-action="Delete" asp-route-id="@item.Idth">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

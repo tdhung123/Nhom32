@@ -1,0 +1,45 @@
+@model btl_nhom32.Models.Xuathang
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Bạn có chắc muốn xoá phiếu xuất hàng này không</h1>
+
+
+<div>
+    <h4>Xuathang</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Nhanvien)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Nhanvien.Manv)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Khachhang)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Khachhang.Makh)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ngayxh)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ngayxh)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.trangtxh)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.trangtxh)
+        </dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Idxh" />
+        <input type="submit" value="Xoá" class="btn btn-danger" /> |
+        <a asp-action="Index">Về bảng xuất hàng</a>
+    </form>
+</div>

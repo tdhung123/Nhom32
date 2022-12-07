@@ -1,0 +1,56 @@
+@model btl_nhom32.Models.Kiemkho
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Thêm kiểm kho mới</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            @* <div class="form-group">
+                <label asp-for="Idkk" class="control-label"></label>
+                <input asp-for="Idkk" class="form-control" />
+                <span asp-validation-for="Idkk" class="text-danger"></span>
+                </div> *@
+            <div class="form-group">
+                <label asp-for="Idkk" class="control-label"></label>
+                @* <input asp-for="Idkk" class="form-control" value="@ViewBag.newID" /> *@
+                <option asp-for="Idkk" class="form-control" value="volvo">Volvo</option>
+                <span asp-validation-for="Idkk" class="text-danger"></span>
+            </div>
+            @* <div class="form-group">
+                <label asp-for="Ngaykk" class="control-label"></label>
+                <input asp-for="Ngaykk" class="form-control" />
+                <span asp-validation-for="Ngaykk" class="text-danger"></span>
+                </div> *@
+            <div class="form-group">
+                <label asp-for="Mahh" class="control-label"></label>
+                <select asp-for="Mahh" class="form-control" asp-items="ViewBag.Mahh"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Makho" class="control-label"></label>
+                <select asp-for="Makho" class="form-control" asp-items="ViewBag.Makho"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Sluongkk" class="control-label"></label>
+                <input asp-for="Sluongkk" class="form-control" />
+                <span asp-validation-for="Sluongkk" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Thêm" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a class="themmoi" asp-action="Index">Về lại danh sách kiểm kho</a>
+</div>
+
+@section Scripts {
+@{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

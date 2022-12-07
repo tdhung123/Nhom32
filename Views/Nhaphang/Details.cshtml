@@ -1,0 +1,48 @@
+@model btl_nhom32.Models.Nhaphang
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Chi tiết hàng nhập</h1>
+
+<div>
+
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Hanghoa)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Hanghoa.Mahh)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Nhacungcap)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Nhacungcap.Mancc)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Kho)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Kho.Makho)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Soluongnh)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Soluongnh)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ngaynh)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ngaynh)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Idnh">Sửa</a> |
+    <a asp-action="Index">Về bảng nhập hàng</a>
+</div>

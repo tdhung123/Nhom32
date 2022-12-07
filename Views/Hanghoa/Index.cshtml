@@ -1,0 +1,66 @@
+@model IEnumerable<btl_nhom32.Models.Hanghoa>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Bảng hàng hoá</h1>
+
+<p>
+    <a class="themmoi" asp-action="Create">Thêm hàng hoá</a>
+</p>
+<table class="table">
+    <thead>
+        <tr class="ccc">
+            <th>
+                @Html.DisplayNameFor(model => model.Mahh)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tenhh)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Thuonghieu)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Dvtinh)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.gvhh)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.gbhh)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr class="ccc">
+                <td>
+                    @Html.DisplayFor(modelItem => item.Mahh)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Tenhh)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Thuonghieu.Tenth)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Dvtinh)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.gvhh)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.gbhh)
+                </td>
+                <td class="view-bang">
+                    <a class="c1c" asp-action="Edit" asp-route-id="@item.Mahh">Sửa</a> |
+                    <a class="c2c" asp-action="Details" asp-route-id="@item.Mahh">Chi tiết</a> |
+                    <a class="c3c" asp-action="Delete" asp-route-id="@item.Mahh">Xoá</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
